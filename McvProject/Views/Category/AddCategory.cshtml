@@ -10,9 +10,11 @@
     <div class="form-group">
         @Html.Label("Kategori Adı")
         @Html.TextBoxFor(x=>x.CategoryName) 
+        @Html.ValidationMessageFor(x=>x.CategoryName)
         <br /><br />
         @Html.Label("Açıklamayı Yazınız")
         @Html.TextBoxFor(x=>x.CategoryDescription)
+        @Html.ValidationMessageFor(x=>x.CategoryDescription)
         <br /><br />
         <button>Kaydet</button>
 
