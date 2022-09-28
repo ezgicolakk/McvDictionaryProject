@@ -16,7 +16,7 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.CategoryID</td>
+            <th>@item.CategoryID</th>
             <td>@item.CategoryName</td>
             <td><a href="#" class="btn btn-danger">Sil</a></td>
             <td><a href="#" class="btn btn-warning">Güncelle</a></td>
@@ -24,5 +24,4 @@
         </tr>
     }
 </table>
-<br />
-<a href="/Category/AddCategory" class="btn btn-info">Yeni Kategori</a>   @*Yönlendirme*@
+<a href="/AdminCategory/AddCategory" class="btn btn-info">Yeni Kategori</a>   @*Yönlendirme*@
