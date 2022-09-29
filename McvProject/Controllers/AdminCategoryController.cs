@@ -51,5 +51,11 @@ namespace McvProject.Controllers
             cm.CategoryDelete(categoryvalue);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult EditCategory(int id)
+        {
+            var categoryvalue = cm.GetByID(id);
+            return View(categoryvalue);
+        }
     }
 }
